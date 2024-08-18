@@ -1,7 +1,7 @@
 export async function addPopulationLayer(map) {
     const resDensidadePopulacional = new google.maps.Data();
     try {
-      const response = await fetch('geojson/Densidade_Populacional_por_Bairros.geojson');
+      const response = await fetch('geojson/densidade_populacional_por_bairro_fortaleza_2024.geojson');
       const data = await response.json();
       resDensidadePopulacional.addGeoJson(data);
     } catch (error) {
@@ -34,11 +34,14 @@ export async function addPopulationLayer(map) {
       const contentString = `<div class="card mb-3">
         <div class="card-header">Bairro: ${event.feature.getProperty("Bairro")}</div>
         <ul class="list-group list-group-flush">
+        <li class="list-group-item">Área (km²): ${event.feature.getProperty("Área (km²)")}</li>
           <li class="list-group-item">Regional: ${event.feature.getProperty("Regional")}</li>
-          <li class="list-group-item">População de acordo com Prévia do Censo 2022: ${event.feature.getProperty("População")}</li>
-          <li class="list-group-item">Densidade (km²): ${event.feature.getProperty("Densidade (km²)")}</li>
+          <li class="list-group-item">População: ${event.feature.getProperty("População")}</li>
+          <li class="list-group-item">Densidade Populacional por km²: ${event.feature.getProperty("Densidade (km²)")}</li>
           <li class="list-group-item">Total de domicílios: ${event.feature.getProperty("Total de domicílios")}</li>
           <li class="list-group-item">Média de moradores por domicílios: ${event.feature.getProperty("Média de moradores por domicílios")}</li>
+          <li class="list-group-item">Fonte: ${event.feature.getProperty("Fonte")}</li>
+          <li class="list-group-item">Ano: ${event.feature.getProperty("Ano")}</li>
         </ul>`;
       const infowindowDensidadePopulacional = new google.maps.InfoWindow();
       infowindowDensidadePopulacional.setContent(contentString);

@@ -10,9 +10,9 @@ body, html {
     width: 100%;
   }
   
-  .navbar {
+  /* .navbar {
     background-color: #343a40;
-  }
+  } */
   
   .navbar .navbar-brand {
     color: #000000;
@@ -26,6 +26,11 @@ body, html {
   .navbar .navbar-toggler-icon {
     color: #ffffff;
   }
+
+  .navbar {
+    background-color: #f42424 !important;
+  }
+
   
   .offcanvas-header {
     background-color: #343a40;

@@ -37,8 +37,8 @@
             >
             <span class="navbar-toggler-icon"></span>
             </button>
-            <img src="./images/logo-cesf-e-cegov-01-1536x313.png" height="40" class="d-inline-block align-text-top">
-            Mapa Interativo CSF
+            <img src="./images/evandro_13.png" height="40" class="d-inline-block align-text-top">
+            <!-- Evandro 2024 -->
         </a>
         <div
           class="offcanvas offcanvas-start"
@@ -80,6 +80,20 @@
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCozinhasFortaleza" />
                       <label class="form-check-label" for="flexSwitchCozinhasFortaleza">Cozinhas Fortaleza</label>
                     </div>
+                    <!-- Filtros de Cozinhas Fortaleza -->
+                    <div id="filtrosCozinhas" style="display:none; margin-top: 10px;">
+                      <label for="filtroLote" class="form-label">Filtrar por Lote:</label>
+                      <select id="filtroLote" class="form-select">
+                          <option value="">Todos</option>
+                          <!-- Opções serão preenchidas dinamicamente -->
+                      </select>
+
+                      <label for="filtroRepresentante" class="form-label" style="margin-top: 10px;">Filtrar por Representante:</label>
+                      <select id="filtroRepresentante" class="form-select">
+                          <option value="">Todos</option>
+                          <!-- Opções serão preenchidas dinamicamente -->
+                      </select>
+                  </div>
                   </div>
                 </div>
               </div>
