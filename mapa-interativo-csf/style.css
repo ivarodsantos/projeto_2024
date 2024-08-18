@@ -1,0 +1,96 @@
+/* Configurações básicas de estilo */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #map {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .navbar {
+    background-color: #343a40;
+  }
+  
+  .navbar .navbar-brand {
+    color: #000000;
+  }
+  
+  .navbar .navbar-toggler {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  .navbar .navbar-toggler-icon {
+    color: #ffffff;
+  }
+  
+  .offcanvas-header {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .offcanvas-body {
+    background-color: #f8f9fa;
+  }
+  
+  .accordion-button {
+    background-color: #e9ecef;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-body {
+    padding: 0.5rem 1.25rem;
+  }
+  
+  .form-check-label {
+    margin-left: 0.5rem;
+  }
+  
+  .card {
+    margin: 0.5rem 0;
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .card-body {
+    padding: 0.5rem;
+  }
+  
+  .list-group-item {
+    padding: 0.25rem 0.75rem;
+  }
+  
+  .info {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+    line-height: 18px;
+  }
+  
+  .legend {
+    line-height: 18px;
+    color: #555;
+  }
+  .legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+  }
+  
