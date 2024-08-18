@@ -19,7 +19,7 @@ export async function addCozinhasFortalezaLayer(map) {
           const marker = new google.maps.Marker({
             position: latLng,
             icon: {
-              url: '../../icons/marker_csf_kitchen.png',
+              url: './icons/marker_csf_kitchen.png',
               scaledSize: new google.maps.Size(30, 30),
             },
             title: feature.properties.name,

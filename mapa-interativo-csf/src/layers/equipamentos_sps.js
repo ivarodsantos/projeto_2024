@@ -19,7 +19,7 @@ export async function addEquipSPSLayer(map) {
           const marker = new google.maps.Marker({
             position: latLng,
             icon: {
-              url: '../icons/equip_sps_marker.png',
+              url: './icons/equip_sps_marker.png',
               scaledSize: new google.maps.Size(30, 30),
             },
             title: feature.properties.name,

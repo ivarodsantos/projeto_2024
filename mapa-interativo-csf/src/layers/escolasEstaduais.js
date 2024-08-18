@@ -19,7 +19,7 @@ export async function addEscolasEstaduaisLayer(map) {
           const marker = new google.maps.Marker({
             position: latLng,
             icon: {
-              url: '../icons/school_marker.png',
+              url: './icons/school_marker.png',
               scaledSize: new google.maps.Size(30, 30),
             },
             title: feature.properties.name,

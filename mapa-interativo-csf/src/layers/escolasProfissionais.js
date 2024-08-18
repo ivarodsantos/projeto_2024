@@ -19,7 +19,7 @@ export async function addEscolasProfissionaisLayer(map) {
           const marker = new google.maps.Marker({
             position: latLng,
             icon: {
-              url: '../icons/prof_school_marker.png',
+              url: './icons/prof_school_marker.png',
               scaledSize: new google.maps.Size(30, 30),
             },
             title: feature.properties.name,

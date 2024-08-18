@@ -1,7 +1,7 @@
 export function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: -4.9823072, lng: -39.3136536 },
-      zoom: 7,
+      center: { lat: -3.7768582, lng: -38.5591243 },
+      zoom: 12,
       mapTypeControl: true,
       mapTypeControlOptions: {
         style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
